@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header class="head">
+      <div class="header">
+        <div class="container" :class="{ show: showSidebar }">
+          <div class="control">
+            <i class="fas fa-bars" @click="showNav"></i>
+          </div>
+        </div>
+        <div class="logo">
+          <h1>logo</h1>
+        </div>
+        <div class="icon">
+          <i class="fas fa-code"></i>
+        </div>
+      </div>
+    </header>
+    <div class="content"></div>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  data: () => {
+    return {
+      showSidebar: false,
+    };
+  },
+  methods: {
+    showNav() {
+      this.showSidebar = !this.showSidebar;
+    },
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

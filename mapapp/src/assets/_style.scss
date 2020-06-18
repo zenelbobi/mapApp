@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    position: relative;
+  
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      padding: 10px;
+      min-height: auto;
+      //min-height: calc(100vh - 20px);
+      background-color: rgba($color: red, $alpha: 0.8);
+      border: solid #fff;
+      border-width: 0 1px 0 0;
+      transition: all 0.5s ease-in-out;
+  
+      .control {
+        margin-bottom: 10px;
+  
+        i {
+          color: #fff;
+          font-size: 2rem;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+  
+      &.show {
+        width: 100%;
+        z-index: 999;
+        min-height: calc(100vh - 20px);
+      }
+    }
+    .logo {
+      color: #fff;
+      text-transform: uppercase;
+    }
+  
+    .icon {
+      color: #fff;
+    }
+  }
