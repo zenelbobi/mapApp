@@ -10,12 +10,15 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "sass-loader": "^8.0.2",
+<<<<<<< HEAD
     "vue": "^2.6.11",
     "vue-sidebar-menu": "^4.6.0"
+=======
+    "vue": "^2.6.11"
+>>>>>>> 6fcd4d88c99323695aae2789aa6b1254acb2c1e1
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
